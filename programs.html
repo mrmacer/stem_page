@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs — STEM @ Skook29</title>
+  <meta name="description" content="Explore all STEM programs at Skook29 — competitions, Make @ Skook29, CSO, STEELS, and EdTech & AI." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .program-nav {
+      position: sticky;
+      top: var(--nav-height);
+      z-index: 100;
+      background: white;
+      border-bottom: 1px solid var(--gray-100);
+      padding: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .program-nav-inner {
+      display: flex;
+      gap: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .program-nav-inner::-webkit-scrollbar { display: none; }
+    .program-nav a {
+      padding: 16px 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+    .program-nav a:hover,
+    .program-nav a.active {
+      color: var(--purple-600);
+      border-bottom-color: var(--purple-600);
+    }
+
+    .program-block {
+      padding: var(--section-pad) 0;
+    }
+    .program-block:nth-child(even) {
+      background: var(--gray-50);
+    }
+    .program-block:nth-child(odd) {
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">S29</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">STEM @ Skook29</span>
+          <span class="nav-brand-sub">Schuylkill IU 29</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="students.html">Students</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="districts.html">Districts</a>
+        <a href="community.html">Community</a>
+        <a href="programs.html" class="active">Programs</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="districts.html">Districts</a>
+    <a href="community.html">Community</a>
+    <a href="programs.html">Programs</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-orb page-hero-orb-1"></div>
+    <div class="page-hero-orb page-hero-orb-2"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Programs</span>
+        </div>
+        <div class="page-hero-label">What We Do</div>
+        <h1 class="page-hero-title">STEM Programs</h1>
+        <p class="page-hero-subtitle">
+          From regional competitions to AI-powered classrooms — every program at STEM @ Skook29
+          is designed to create real impact for students, teachers, and communities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM QUICK NAV -->
+  <nav class="program-nav">
+    <div class="program-nav-inner">
+      <a href="#competitions">Competitions</a>
+      <a href="#make">Make @ Skook29</a>
+      <a href="#cso">CSO @ Skook29</a>
+      <a href="#steels">STEELS @ Skook29</a>
+      <a href="#edtech">EdTech & AI</a>
+    </div>
+  </nav>
+
+  <!-- COMPETITIONS -->
+  <div class="program-block" id="competitions">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Program 01</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Competitions</h2>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 20px;">
+            STEM competitions give students a high-stakes arena to apply their knowledge, build teamwork skills, and compete regionally and beyond. We organize, support, and connect students to competitions across every STEM discipline.
+          </p>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 32px;">
+            Competitions aren't just about winning. They build resilience, creative problem-solving, and the kind of real-world experience that stands out on college applications and resumes.
+          </p>
+          <div class="tags-row" style="margin-bottom: 28px;">
+            <span class="tag">🤖 Robotics</span>
+            <span class="tag">🔬 Science Olympiad</span>
+            <span class="tag">💻 Coding</span>
+            <span class="tag">🏗️ Engineering</span>
+            <span class="tag">🧮 Math</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get Your Team Involved →</a>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="feature-item" style="flex-direction: column; text-align: center; align-items: center;">
+            <div class="feature-icon-wrap" style="margin-bottom: 12px;">🤖</div>
+            <div class="feature-content">
+              <h4>FIRST Robotics</h4>
+              <p>Teams, builds, and regional competitions</p>
+            </div>
+          </div>
+          <div class="feature-item" style="flex-direction: column; text-align: center; align-items: center;">
+            <div class="feature-icon-wrap" style="margin-bottom: 12px;">🔬</div>
+            <div class="feature-content">
+              <h4>Science Olympiad</h4>
+              <p>Regional invitational and state teams</p>
+            </div>
+          </div>
+          <div class="feature-item" style="flex-direction: column; text-align: center; align-items: center;">
+            <div class="feature-icon-wrap" style="margin-bottom: 12px;">💻</div>
+            <div class="feature-content">
+              <h4>Coding Challenges</h4>
+              <p>App design, cybersecurity, and more</p>
+            </div>
+          </div>
+          <div class="feature-item" style="flex-direction: column; text-align: center; align-items: center;">
+            <div class="feature-icon-wrap" style="margin-bottom: 12px;">🏆</div>
+            <div class="feature-content">
+              <h4>STEM Expo</h4>
+              <p>Regional showcase and project fair</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAKE @ SKOOK29 -->
+  <div class="program-block" id="make">
+    <div class="container">
+      <div class="two-col reverse">
+        <div style="background: linear-gradient(135deg, #164e63, #0284c7); border-radius: var(--radius-xl); padding: 48px; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 360px;">
+          <div style="font-size: 5rem; margin-bottom: 20px;">🛠️</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; margin-bottom: 12px;">Make @ Skook29</h3>
+          <p style="opacity: 0.85; font-size: 1rem; line-height: 1.65;">Where ideas become real things.</p>
+        </div>
+        <div>
+          <span class="section-label">Program 02</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Make @ Skook29</h2>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 20px;">
+            The Make @ Skook29 makerspace is a hands-on innovation lab where students from across the region come to design, prototype, and build. It's learning by doing — and it changes how students think about what's possible.
+          </p>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 32px;">
+            Whether a student is building their first 3D model or engineering a functional prototype, the makerspace provides the tools, the guidance, and the space to take creative risks.
+          </p>
+          <div class="feature-grid" style="margin-bottom: 28px;">
+            <div class="feature-item">
+              <div class="feature-icon-wrap">🖨️</div>
+              <div class="feature-content">
+                <h4>3D Printing</h4>
+                <p>Design and print functional parts and models</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">⚡</div>
+              <div class="feature-content">
+                <h4>Electronics</h4>
+                <p>Arduino, circuits, and embedded systems</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">✂️</div>
+              <div class="feature-content">
+                <h4>Laser Cutting</h4>
+                <p>Precise fabrication from digital designs</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">💡</div>
+              <div class="feature-content">
+                <h4>Design Thinking</h4>
+                <p>Structured problem-solving workshops</p>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book a Makerspace Visit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSO @ SKOOK29 -->
+  <div class="program-block" id="cso">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Program 03</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">CSO @ Skook29</h2>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 20px;">
+            Career and Student Organizations are powerful, research-backed vehicles for career readiness and student development. STEM @ Skook29 supports CSO programs across the region, connecting them to competition opportunities, resources, and industry partners.
+          </p>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 32px;">
+            Students who participate in CSO programs develop leadership, communication, teamwork, and industry-specific skills that employers and colleges are looking for.
+          </p>
+          <div class="tags-row" style="margin-bottom: 28px;">
+            <span class="tag">🎤 Leadership</span>
+            <span class="tag">🤝 Teamwork</span>
+            <span class="tag">💼 Career Ready</span>
+            <span class="tag">🏆 Competitions</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Connect Your CSO →</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="background: var(--gradient-main); border-radius: var(--radius-xl); padding: 28px; color: white;">
+            <h4 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: 8px;">Competition Support</h4>
+            <p style="font-size: 0.9375rem; opacity: 0.85; line-height: 1.65;">Registration, coaching, and logistics for regional and state CSO competitions.</p>
+          </div>
+          <div style="background: white; border-radius: var(--radius-xl); padding: 28px; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100);">
+            <h4 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: 8px; color: var(--gray-900);">Industry Connections</h4>
+            <p style="font-size: 0.9375rem; color: var(--gray-500); line-height: 1.65;">We broker connections between CSO chapters and regional industry partners for mentorship and site visits.</p>
+          </div>
+          <div style="background: white; border-radius: var(--radius-xl); padding: 28px; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100);">
+            <h4 style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: 8px; color: var(--gray-900);">Advisor Resources</h4>
+            <p style="font-size: 0.9375rem; color: var(--gray-500); line-height: 1.65;">Curriculum resources, professional development, and a regional advisor network for CSO chapter leaders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEELS @ SKOOK29 -->
+  <div class="program-block" id="steels">
+    <div class="container">
+      <div class="two-col reverse">
+        <div style="background: linear-gradient(135deg, #431407, #ea580c); border-radius: var(--radius-xl); padding: 48px; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 360px;">
+          <div style="font-size: 4rem; margin-bottom: 20px;">🔬</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; margin-bottom: 12px;">STEELS @ Skook29</h3>
+          <p style="opacity: 0.85; font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">Supporting every teacher in every district as Pennsylvania's new science and STEM standards roll out.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; opacity: 0.85;">
+              <span>✓</span><span>Standards Alignment</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; opacity: 0.85;">
+              <span>✓</span><span>Curriculum Support</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; opacity: 0.85;">
+              <span>✓</span><span>Instructional Coaching</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="section-label">Program 04</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">STEELS @ Skook29</h2>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 20px;">
+            Pennsylvania's STEELS standards represent a major shift in how science, technology, engineering, environment, ecology, and sustainability are taught. That shift requires support — and that's what STEM @ Skook29 delivers.
+          </p>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 32px;">
+            We provide teachers and administrators with the resources, training, and coaching they need to implement the STEELS framework with confidence — at every grade level and in every subject area.
+          </p>
+          <div class="feature-grid" style="margin-bottom: 28px;">
+            <div class="feature-item">
+              <div class="feature-icon-wrap">📖</div>
+              <div class="feature-content">
+                <h4>Standards Unpacking</h4>
+                <p>Deep dives into what STEELS requires at each grade band</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">🗺️</div>
+              <div class="feature-content">
+                <h4>Curriculum Mapping</h4>
+                <p>Aligning existing curriculum to STEELS expectations</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">👥</div>
+              <div class="feature-content">
+                <h4>Coaching Cycles</h4>
+                <p>Ongoing instructional coaching and classroom support</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">📁</div>
+              <div class="feature-content">
+                <h4>Resource Library</h4>
+                <p>Ready-to-use lessons, labs, and assessments</p>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Request STEELS Support →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDTECH & AI -->
+  <div class="program-block" id="edtech">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Program 05</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">EdTech & AI</h2>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 20px;">
+            Artificial intelligence is reshaping every field — and education is no exception. STEM @ Skook29 helps teachers and students understand, use, and think critically about AI and emerging technologies.
+          </p>
+          <p style="font-size: 1.0625rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 32px;">
+            From practical classroom AI tools to digital citizenship frameworks, we make EdTech and AI education accessible, relevant, and grounded in what actually works in real schools.
+          </p>
+          <div class="tags-row" style="margin-bottom: 28px;">
+            <span class="tag">🤖 AI Literacy</span>
+            <span class="tag">💻 EdTech Tools</span>
+            <span class="tag">🔒 Digital Citizenship</span>
+            <span class="tag">📊 Data Literacy</span>
+            <span class="tag">🖥️ Coding</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Explore EdTech Programs →</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="background: linear-gradient(135deg, #1e0a3c, #7e22ce); border-radius: var(--radius-xl); padding: 32px; color: white;">
+            <h4 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">For Teachers</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; opacity: 0.85;">
+              <li>✦ AI Tools for Educators Workshop</li>
+              <li>✦ EdTech Integration Coaching</li>
+              <li>✦ Digital Learning Strategy</li>
+              <li>✦ Tool Evaluation & Reviews</li>
+            </ul>
+          </div>
+          <div style="background: linear-gradient(135deg, #312e81, #6d28d9); border-radius: var(--radius-xl); padding: 32px; color: white;">
+            <h4 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">For Students</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; opacity: 0.85;">
+              <li>✦ AI Literacy Programs</li>
+              <li>✦ Coding & App Development</li>
+              <li>✦ Data Science Foundations</li>
+              <li>✦ Digital Citizenship & Ethics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2>Want to Learn More About a Program?</h2>
+        <p>Reach out and we'll connect you to the right resources, events, and support for your students and school.</p>
+        <div class="cta-banner-actions">
+          <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+          <a href="events.html" class="btn btn-outline-white btn-lg">Upcoming Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">S29</div>
+          <div class="footer-brand-name">STEM @ Skook29</div>
+          <div class="footer-brand-sub">Schuylkill Intermediate Unit 29</div>
+          <p>Building the future of STEM learning in Schuylkill County.</p>
+          <div class="footer-contact">
+            <a href="mailto:gmacer@iu29.org">✉ gmacer@iu29.org</a>
+            <a href="#">📍 Schuylkill Intermediate Unit 29</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>For You</h4>
+          <ul>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="districts.html">Administrators</a></li>
+            <li><a href="community.html">Community Partners</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#make">Make @ Skook29</a></li>
+            <li><a href="#cso">CSO @ Skook29</a></li>
+            <li><a href="#steels">STEELS @ Skook29</a></li>
+            <li><a href="#edtech">EdTech & AI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 STEM @ Skook29 · Schuylkill Intermediate Unit 29</p>
+        <div class="social-links">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Highlight active program nav link on scroll
+    const sections = ['competitions', 'make', 'cso', 'steels', 'edtech'];
+    const navLinks = document.querySelectorAll('.program-nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section && window.scrollY >= section.offsetTop - 120) {
+          current = id;
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
