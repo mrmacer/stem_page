@@ -6,13 +6,13 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  --purple-900: #1e0a3c;
-  --purple-800: #3b0764;
-  --purple-700: #581c87;
-  --purple-600: #7e22ce;
-  --purple-500: #9333ea;
-  --purple-400: #a855f7;
-  --purple-100: #f3e8ff;
+  --purple-900: #1a0509;
+  --purple-800: #3d0d15;
+  --purple-700: #6b1422;
+  --purple-600: #8b1a2e;
+  --purple-500: #a52035;
+  --purple-400: #c4364e;
+  --purple-100: #fce8eb;
 
   --orange-600: #ea580c;
   --orange-500: #f97316;
@@ -29,17 +29,17 @@
   --gray-50: #f9fafb;
   --white: #ffffff;
 
-  --gradient-main: linear-gradient(135deg, #7e22ce 0%, #ea580c 100%);
-  --gradient-hero: linear-gradient(135deg, #1e0a3c 0%, #3b0764 40%, #7e22ce 70%, #ea580c 100%);
-  --gradient-card: linear-gradient(135deg, #7e22ce, #9333ea);
+  --gradient-main: linear-gradient(135deg, #8b1a2e 0%, #ea580c 100%);
+  --gradient-hero: linear-gradient(135deg, #1a0509 0%, #3d0d15 40%, #8b1a2e 70%, #ea580c 100%);
+  --gradient-card: linear-gradient(135deg, #8b1a2e, #a52035);
   --gradient-orange: linear-gradient(135deg, #ea580c, #f97316);
-  --gradient-subtle: linear-gradient(135deg, #f3e8ff 0%, #fff7ed 100%);
+  --gradient-subtle: linear-gradient(135deg, #fce8eb 0%, #fff7ed 100%);
 
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.07);
   --shadow-lg: 0 10px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
-  --shadow-purple: 0 8px 32px rgba(126,34,206,0.25);
+  --shadow-purple: 0 8px 32px rgba(139,26,46,0.25);
   --shadow-orange: 0 8px 32px rgba(234,88,12,0.25);
 
   --radius-sm: 8px;
@@ -165,7 +165,7 @@ section {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(126,34,206,0.08);
+  border-bottom: 1px solid rgba(139,26,46,0.08);
   transition: box-shadow 0.3s ease;
 }
 
@@ -340,7 +340,7 @@ section {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(126,34,206,0.35);
+  box-shadow: 0 12px 40px rgba(139,26,46,0.35);
 }
 
 .btn-secondary {
@@ -511,7 +511,7 @@ section {
 .hero-orb-1 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, #9333ea, transparent);
+  background: radial-gradient(circle, #a52035, transparent);
   top: -200px;
   right: -100px;
 }
@@ -527,7 +527,7 @@ section {
 .hero-orb-3 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #7e22ce, transparent);
+  background: radial-gradient(circle, #8b1a2e, transparent);
   top: 200px;
   left: 400px;
 }
@@ -819,7 +819,7 @@ section {
 .page-hero-orb-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #9333ea, transparent);
+  background: radial-gradient(circle, #a52035, transparent);
   top: -200px;
   right: -100px;
 }
@@ -1269,4 +1269,58 @@ section {
   .grid-4 { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.5rem; }
   .container { padding: 0 16px; }
+}
+
+/* =========================================
+   IU29 LOGO PLACEMENTS
+   ========================================= */
+
+/* Header logo */
+.nav-iu29-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  margin-left: 6px;
+  border-left: 1px solid rgba(0,0,0,0.1);
+  padding-left: 12px;
+}
+
+@media (max-width: 600px) {
+  .nav-iu29-logo { display: none; }
+}
+
+/* Hero visual logo */
+.hero-iu29-logo {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: brightness(0) invert(1);
+}
+
+/* Footer logo */
+.footer-iu29-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  filter: brightness(0) invert(1);
+}
+
+/* Clickable eyebrow pill */
+a.hero-eyebrow {
+  display: inline-flex;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+a.hero-eyebrow:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
 }
